@@ -1,0 +1,31 @@
+Index: git_quilt/main.c
+===================================================================
+--- git_quilt.orig/main.c	2015-11-02 12:27:20.079884947 +0530
++++ git_quilt/main.c	2015-11-02 12:27:20.087884947 +0530
+@@ -3,7 +3,7 @@
+ int main()
+ {
+ 	sum();
+-
++	diff();
+ 	return 0;
+ }
+ void sum()
+@@ -13,3 +13,10 @@
+ 	printf("\nSum : %d\n",sum);
+ 
+ }
++
++void diff()
++{
++	int diff = 10-20;
++        printf("\nDiff : %d\n",diff);
++
++}
+Index: git_quilt/main.h
+===================================================================
+--- git_quilt.orig/main.h	2015-11-02 12:27:20.079884947 +0530
++++ git_quilt/main.h	2015-11-02 12:27:20.087884947 +0530
+@@ -1 +1,2 @@
+ void sum(void);
++void diff(void);
