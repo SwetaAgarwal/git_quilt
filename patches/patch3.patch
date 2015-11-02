@@ -1,0 +1,29 @@
+Index: git_quilt/main.c
+===================================================================
+--- git_quilt.orig/main.c	2015-11-02 12:44:02.275917017 +0530
++++ git_quilt/main.c	2015-11-02 12:45:18.775919465 +0530
+@@ -4,6 +4,7 @@
+ {
+ 	sum();
+ 	diff();
++	prod();
+ 	return 0;
+ }
+ void sum()
+@@ -20,3 +21,8 @@
+         printf("\nDiff : %d\n",diff);
+ 
+ }
++void prod(()
++{
++	printf("Mult : %d",(3*4));
++
++}
+Index: git_quilt/main.h
+===================================================================
+--- git_quilt.orig/main.h	2015-11-02 12:44:02.275917017 +0530
++++ git_quilt/main.h	2015-11-02 12:45:32.679919910 +0530
+@@ -1,2 +1,3 @@
+ void sum(void);
+ void diff(void);
++void prod(void);
